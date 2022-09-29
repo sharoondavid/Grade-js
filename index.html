@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grading system</title>
+</head>
+<body>
+
+
+    <script>
+      alert("Enter the subject marks:\n1) computer\n2) maths\n3) physics\n4) chemistry")
+
+      var computer = +prompt("Enter the marks of computer (from 100)")
+      var maths = +prompt("Enter the marks of maths (from 100)")
+      var physics = +prompt("Enter the marks of physics (from 100)")
+      var chemistry = +prompt("Enter the marks of chemistry (from 100)")
+
+      var totalmarks = 400
+      var obtmarks = computer + maths + physics + chemistry
+      var per = (obtmarks / totalmarks) * 100
+
+      if(per >= 80){
+        document.write("<h1 style='color:green';>Percentage: " + per + "</h1>")
+        document.write("<h1 style='color:green';>Grade: A+</h1>")
+        
+      }
+      else if(per >= 70){
+        document.write("<h1 style='color:green';>Percentage: " + per + "</h1>")
+        document.write("<h1 style='color:green';>Grade: A</h1>")
+        
+      }
+      else if(per >= 60){
+        document.write("<h1 style='color:orange';>Percentage: " + per + "</h1>")
+        document.write("<h1 style='color:orange';>Grade: B</h1>")
+        
+      }
+      else if(per >= 50){
+        document.write("<h1 style='color:orange';>Percentage: " + per + "</h1>")
+        document.write("<h1 style='color:orange';>Grade: C</h1>")
+        
+      }
+      else if(per >= 40){
+        document.write("<h1 style='color:red';>Percentage:"+per+"</h1>")
+        document.write("<h1 style='color:red';>Sorry your fail</h1>")
+        
+      }
+    </script>
+</body>
+</html>
